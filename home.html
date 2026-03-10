@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Samsung | Informacion Corporativa</title>
+  <meta name="description" content="Pagina informativa sobre Samsung Electronics. Historia, sedes, areas de negocio y mas de 85 anos de innovacion tecnologica.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style_home.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-container">
+      <a href="/" class="logo">
+        <span class="logo-text">SAMSUNG</span>
+        <span class="logo-divider"></span>
+        <span class="logo-subtitle">Corporate Info</span>
+      </a>
+      <nav class="nav">
+        <a href="#" class="nav-link">Inicio</a>
+        <a href="matrices.html" class="nav-link">Matrices</a>
+        <a href="#" class="nav-link">Reportes</a>
+        <a href="#" class="nav-link">Documentacion</a>
+      </nav>
+      <button class="menu-toggle" onclick="toggleMenu()">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+    <nav class="nav-mobile" id="mobileNav">
+      <a href="#acerca" class="nav-link-mobile">Acerca de</a>
+      <a href="#historia" class="nav-link-mobile">Historia</a>
+      <a href="#negocios" class="nav-link-mobile">Negocios</a>
+      <a href="#sedes" class="nav-link-mobile">Sedes</a>
+      <a href="matrices.html" class="nav-link-mobile">Matrices</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-bg-pattern"></div>
+    <div class="container hero-content">
+      <p class="hero-subtitle">Inspirando al mundo desde 1938</p>
+      <h1 class="hero-title">
+        Samsung
+        <span class="hero-title-accent">Creando el futuro</span>
+      </h1>
+      <p class="hero-description">
+        Una compania global que ha transformado la vida de miles de millones de personas 
+        a traves de la innovacion tecnologica y el compromiso con la excelencia.
+      </p>
+      <div class="hero-buttons">
+        <a href="#acerca" class="btn btn-primary">
+          Conocer mas
+          <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </a>
+        <a href="#historia" class="btn btn-outline">Nuestra historia</a>
+      </div>
+    </div>
+    <div class="hero-gradient-bottom"></div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-number">85+</div>
+          <div class="stat-label">Anos de historia</div>
+          <div class="stat-description">Fundada en 1938</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">267,000+</div>
+          <div class="stat-label">Empleados</div>
+          <div class="stat-description">A nivel mundial</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">74</div>
+          <div class="stat-label">Paises</div>
+          <div class="stat-description">Con presencia global</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">$200B+</div>
+          <div class="stat-label">USD en ingresos</div>
+          <div class="stat-description">Anuales aproximados</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="acerca" class="about">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-subtitle">Acerca de Samsung</p>
+        <h2 class="section-title">Una vision global para un futuro mejor</h2>
+        <p class="section-description">
+          Samsung Electronics Co., Ltd. es una empresa multinacional surcoreana de electronica 
+          de consumo, tecnologia de la informacion y telecomunicaciones. Es el conglomerado 
+          mas grande de Corea del Sur y uno de los fabricantes de electronica mas grandes del mundo.
+        </p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"></path>
+              <polyline points="9 22 9 12 15 12 15 22"></polyline>
+            </svg>
+          </div>
+          <h3 class="feature-title">Sede Principal</h3>
+          <p class="feature-description">Samsung Town, Seocho-gu, Seoul, Corea del Sur. El complejo corporativo mas grande de Asia.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="2" y1="12" x2="22" y2="12"></line>
+              <path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"></path>
+            </svg>
+          </div>
+          <h3 class="feature-title">Presencia Global</h3>
+          <p class="feature-description">Operaciones en 74 paises con mas de 200 subsidiarias y oficinas alrededor del mundo.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+            </svg>
+          </div>
+          <h3 class="feature-title">Innovacion Constante</h3>
+          <p class="feature-description">Lider mundial en patentes tecnologicas y desarrollo de productos revolucionarios.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"></path>
+              <circle cx="9" cy="7" r="4"></circle>
+              <path d="M23 21v-2a4 4 0 00-3-3.87"></path>
+              <path d="M16 3.13a4 4 0 010 7.75"></path>
+            </svg>
+          </div>
+          <h3 class="feature-title">Compromiso Social</h3>
+          <p class="feature-description">Programas de responsabilidad social en educacion, salud y medio ambiente.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- History Section -->
+  <section id="historia" class="history">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-subtitle">Nuestra Historia</p>
+        <h2 class="section-title">85+ anos de innovacion</h2>
+        <p class="section-description">
+          Desde sus humildes inicios como empresa comercial hasta convertirse en un 
+          gigante tecnologico global, Samsung ha transformado industrias y vidas.
+        </p>
+      </div>
+      <div class="timeline">
+        <div class="timeline-line"></div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-year">1938</span>
+            <h3 class="timeline-title">Fundacion</h3>
+            <p class="timeline-description">Lee Byung-chul funda Samsung Trading Co. en Daegu, Corea del Sur, como una pequena empresa comercial de exportacion.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-year">1969</span>
+            <h3 class="timeline-title">Samsung Electronics</h3>
+            <p class="timeline-description">Se establece Samsung Electronics, marcando el inicio de la era tecnologica de la compania.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-year">1988</span>
+            <h3 class="timeline-title">Semiconductores</h3>
+            <p class="timeline-description">Samsung se convierte en lider mundial en produccion de chips de memoria DRAM.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-year">1993</span>
+            <h3 class="timeline-title">Nueva Gestion</h3>
+            <p class="timeline-description">Lee Kun-hee lanza la iniciativa de 'Nueva Gestion' transformando Samsung en una marca premium global.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-year">2010</span>
+            <h3 class="timeline-title">Galaxy S</h3>
+            <p class="timeline-description">Debut del Samsung Galaxy S, estableciendo a Samsung como lider en el mercado de smartphones.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-year">2024</span>
+            <h3 class="timeline-title">IA y Futuro</h3>
+            <p class="timeline-description">Continua liderando en IA, dispositivos plegables y tecnologia de proxima generacion.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Business Section -->
+  <section id="negocios" class="business">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-subtitle">Areas de Negocio</p>
+        <h2 class="section-title">Diversificacion e innovacion</h2>
+        <p class="section-description">
+          Samsung opera en multiples sectores tecnologicos, desde electronica de consumo 
+          hasta semiconductores avanzados, liderando la innovacion en cada industria.
+        </p>
+      </div>
+      <div class="business-grid">
+        <div class="business-card">
+          <div class="business-number">01</div>
+          <div class="business-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+              <line x1="12" y1="18" x2="12.01" y2="18"></line>
+            </svg>
+          </div>
+          <span class="business-badge">#1 en smartphones</span>
+          <h3 class="business-title">Dispositivos Moviles</h3>
+          <p class="business-description">Smartphones Galaxy, tablets y wearables. Lider mundial en ventas de telefonos inteligentes.</p>
+        </div>
+        <div class="business-card">
+          <div class="business-number">02</div>
+          <div class="business-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="7" width="20" height="15" rx="2" ry="2"></rect>
+              <polyline points="17 2 12 7 7 2"></polyline>
+            </svg>
+          </div>
+          <span class="business-badge">18 anos lider en TV</span>
+          <h3 class="business-title">Electronica de Consumo</h3>
+          <p class="business-description">Televisores QLED, electrodomesticos inteligentes y sistemas de audio premium.</p>
+        </div>
+        <div class="business-card">
+          <div class="business-number">03</div>
+          <div class="business-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect>
+              <rect x="9" y="9" width="6" height="6"></rect>
+              <line x1="9" y1="1" x2="9" y2="4"></line>
+              <line x1="15" y1="1" x2="15" y2="4"></line>
+              <line x1="9" y1="20" x2="9" y2="23"></line>
+              <line x1="15" y1="20" x2="15" y2="23"></line>
+              <line x1="20" y1="9" x2="23" y2="9"></line>
+              <line x1="20" y1="14" x2="23" y2="14"></line>
+              <line x1="1" y1="9" x2="4" y2="9"></line>
+              <line x1="1" y1="14" x2="4" y2="14"></line>
+            </svg>
+          </div>
+          <span class="business-badge">Lider en chips</span>
+          <h3 class="business-title">Semiconductores</h3>
+          <p class="business-description">Chips de memoria, procesadores y soluciones de almacenamiento para la industria global.</p>
+        </div>
+        <div class="business-card">
+          <div class="business-number">04</div>
+          <div class="business-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+              <line x1="8" y1="21" x2="16" y2="21"></line>
+              <line x1="12" y1="17" x2="12" y2="21"></line>
+            </svg>
+          </div>
+          <span class="business-badge">Innovacion AMOLED</span>
+          <h3 class="business-title">Pantallas</h3>
+          <p class="business-description">Tecnologia de pantallas OLED y LCD para dispositivos moviles, monitores y TVs.</p>
+        </div>
+        <div class="business-card">
+          <div class="business-number">05</div>
+          <div class="business-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+              <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+              <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+            </svg>
+          </div>
+          <span class="business-badge">SSD de vanguardia</span>
+          <h3 class="business-title">Almacenamiento</h3>
+          <p class="business-description">SSDs, memorias flash y soluciones de almacenamiento empresarial de alto rendimiento.</p>
+        </div>
+        <div class="business-card">
+          <div class="business-number">06</div>
+          <div class="business-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 18H3a2 2 0 01-2-2V8a2 2 0 012-2h3.19M15 6h2a2 2 0 012 2v8a2 2 0 01-2 2h-3.19"></path>
+              <line x1="23" y1="13" x2="23" y2="11"></line>
+              <polyline points="11 6 7 12 13 12 9 18"></polyline>
+            </svg>
+          </div>
+          <span class="business-badge">Energia del futuro</span>
+          <h3 class="business-title">Baterias SDI</h3>
+          <p class="business-description">Baterias de litio para vehiculos electricos, electronica y almacenamiento de energia.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Headquarters Section -->
+  <section id="sedes" class="headquarters">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-subtitle">Sedes Globales</p>
+        <h2 class="section-title">Presencia en todo el mundo</h2>
+        <p class="section-description">
+          Con oficinas en los principales centros economicos del mundo, Samsung 
+          mantiene una presencia global que le permite servir a clientes en cada continente.
+        </p>
+      </div>
+      
+      <!-- Main HQ Card -->
+      <div class="hq-main-card">
+        <div class="hq-main-content">
+          <div class="hq-main-info">
+            <span class="hq-badge">Sede Principal</span>
+            <h3 class="hq-main-title">Samsung Town, Seoul</h3>
+            <p class="hq-main-description">
+              Samsung Town es un complejo de tres rascacielos en el distrito Seocho de Seoul, 
+              Corea del Sur. Es el cuartel general de Samsung Electronics y Samsung C&T Corporation, 
+              albergando a mas de 15,000 empleados.
+            </p>
+            <div class="hq-details">
+              <div class="hq-detail">
+                <svg class="hq-detail-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                <span>11, Seocho-daero 74-gil, Seocho-gu, Seoul, 06620</span>
+              </div>
+              <div class="hq-detail">
+                <svg class="hq-detail-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"></path>
+                </svg>
+                <span>+82-2-2255-0114</span>
+              </div>
+              <div class="hq-detail">
+                <svg class="hq-detail-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+                <span>contact@samsung.com</span>
+              </div>
+              <div class="hq-detail">
+                <svg class="hq-detail-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
+                <span>Fundada: 1938 | Sede actual: 2008</span>
+              </div>
+            </div>
+          </div>
+          <div class="hq-main-visual">
+            <div class="hq-korean-text">서울</div>
+            <span class="hq-korean-subtitle">Seoul, Corea del Sur</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Regional Offices -->
+      <div class="regional-offices-grid">
+        <div class="regional-office-card">
+          <span class="office-badge">Regional</span>
+          <h3 class="office-title">Samsung Electronics America</h3>
+          <div class="office-location">
+            <svg class="office-location-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+            Ridgefield Park, New Jersey, EE.UU.
+          </div>
+          <p class="office-description">Sede de operaciones para el mercado norteamericano.</p>
+        </div>
+        <div class="regional-office-card">
+          <span class="office-badge">Regional</span>
+          <h3 class="office-title">Samsung Electronics Europe</h3>
+          <div class="office-location">
+            <svg class="office-location-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+            Chertsey, Surrey, Reino Unido
+          </div>
+          <p class="office-description">Centro de operaciones para el mercado europeo.</p>
+        </div>
+        <div class="regional-office-card">
+          <span class="office-badge">Regional</span>
+          <h3 class="office-title">Samsung Latinoamerica</h3>
+          <div class="office-location">
+            <svg class="office-location-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+            Sao Paulo, Brasil
+          </div>
+          <p class="office-description">Oficinas centrales para operaciones en America Latina.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h4 class="footer-logo">SAMSUNG</h4>
+          <p class="footer-description">
+            Inspirando al mundo, creando el futuro. Samsung es lider global en 
+            tecnologia e innovacion desde 1938.
+          </p>
+        </div>
+        <div class="footer-links">
+          <h5 class="footer-title">Compania</h5>
+          <ul class="footer-list">
+            <li><a href="#acerca">Acerca de</a></li>
+            <li><a href="#historia">Historia</a></li>
+            <li><a href="#negocios">Negocios</a></li>
+            <li><a href="#sedes">Sedes</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h5 class="footer-title">Productos</h5>
+          <ul class="footer-list">
+            <li><span>Smartphones Galaxy</span></li>
+            <li><span>Televisores</span></li>
+            <li><span>Electrodomesticos</span></li>
+            <li><span>Wearables</span></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h5 class="footer-title">Contacto</h5>
+          <ul class="footer-list">
+            <li><span>Samsung Town, Seoul</span></li>
+            <li><span>Corea del Sur</span></li>
+            <li><span>+82-2-2255-0114</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>2024 Samsung. Todos los derechos reservados.</p>
+        <p class="footer-disclaimer">Esta es una pagina informativa con fines educativos.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const mobileNav = document.getElementById('mobileNav');
+      mobileNav.classList.toggle('active');
+    }
+  </script>
+
+</body>
+</html>

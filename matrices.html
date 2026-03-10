@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Samsung - Mapas y Matrices</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style_matrices.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-container">
+      <a href="/" class="logo">
+        <span class="logo-text">SAMSUNG</span>
+        <span class="logo-divider"></span>
+        <span class="logo-subtitle">Corporate Info</span>
+      </a>
+      <nav class="nav">
+        <a href="home.html" class="nav-link">Inicio</a>
+        <a href="matrices.html" class="nav-link">Matrices</a>
+        <a href="#" class="nav-link">Reportes</a>
+        <a href="#" class="nav-link">Documentacion</a>
+      </nav>
+      <button class="menu-toggle" onclick="toggleMenu()">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+    <nav class="nav-mobile" id="mobileNav">
+      <a href="#acerca" class="nav-link-mobile">Acerca de</a>
+      <a href="#historia" class="nav-link-mobile">Historia</a>
+      <a href="#negocios" class="nav-link-mobile">Negocios</a>
+      <a href="#sedes" class="nav-link-mobile">Sedes</a>
+      <a href="matrices.html" class="nav-link-mobile">Matrices</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <span class="hero-badge">Herramientas de Gestion</span>
+        <h1 class="hero-title">Mapas y Matrices</h1>
+        <p class="hero-description">
+          Documentacion estrategica y operativa de Samsung para el analisis, 
+          planificacion y gestion de procesos organizacionales.
+        </p>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <span class="hero-stat-number">8</span>
+          <span class="hero-stat-label">Documentos</span>
+        </div>
+        <div class="hero-stat">
+          <span class="hero-stat-number">3</span>
+          <span class="hero-stat-label">Categorias</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <main class="main">
+    <div class="container">
+      
+      <!-- Categoria: Analisis Estrategico -->
+      <section class="category-section">
+        <div class="category-header">
+          <div class="category-icon category-icon-blue">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="2" y1="12" x2="22" y2="12"></line>
+              <path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"></path>
+            </svg>
+          </div>
+          <div>
+            <h2 class="category-title">Analisis Estrategico</h2>
+            <p class="category-subtitle">Evaluacion del entorno y partes interesadas</p>
+          </div>
+        </div>
+        
+        <div class="matrices-grid">
+          <article class="matrix-card">
+            <div class="matrix-header">
+              <span class="matrix-badge matrix-badge-blue">Estrategico</span>
+              <span class="matrix-code">AE-001</span>
+            </div>
+            <h3 class="matrix-title">Analisis PESTEL</h3>
+            <p class="matrix-description">
+              Herramienta de analisis del macroentorno que evalua los factores externos 
+              que pueden impactar las operaciones de Samsung.
+            </p>
+            <div class="matrix-aspects">
+              <h4 class="aspects-title">Factores Analizados:</h4>
+              <ul class="aspects-list">
+                <li>Politicos: regulaciones y politicas gubernamentales</li>
+                <li>Economicos: condiciones del mercado global</li>
+                <li>Sociales: tendencias y comportamiento del consumidor</li>
+                <li>Tecnologicos: innovacion y avances tecnologicos</li>
+                <li>Ecologicos: normativas ambientales</li>
+                <li>Legales: leyes y cumplimiento normativo</li>
+              </ul>
+            </div>
+            <button class="matrix-btn" onclick="openModal('https://i.imgur.com/YzcCRL3.jpeg', 'Analisis PESTEL')">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                <circle cx="12" cy="12" r="3"></circle>
+              </svg>
+              Ver Analisis
+            </button>
+          </article>
+
+          <article class="matrix-card">
+            <div class="matrix-header">
+              <span class="matrix-badge matrix-badge-blue">Estrategico</span>
+              <span class="matrix-code">AE-002</span>
+            </div>
+            <h3 class="matrix-title">Mapa de Interesados</h3>
+            <p class="matrix-description">
+              Identificacion y clasificacion de los stakeholders clave que influyen 
+              o son afectados por las actividades de la organizacion.
+            </p>
+            <div class="matrix-aspects">
+              <h4 class="aspects-title">Elementos Clave:</h4>
+              <ul class="aspects-list">
+                <li>Identificacion de partes interesadas</li>
+                <li>Nivel de influencia y poder</li>
+                <li>Interes en la organizacion</li>
+                <li>Estrategias de comunicacion</li>
+              </ul>
+            </div>
+            <button class="matrix-btn" onclick="openModal('https://i.imgur.com/QhHSPgz.jpeg', 'Mapa de Interesados')">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                <circle cx="12" cy="12" r="3"></circle>
+              </svg>
+              Ver Mapa
+            </button>
+          </article>
+        </div>
+      </section>
+
+      <!-- Categoria: Procesos -->
+      <section class="category-section">
+        <div class="category-header">
+          <div class="category-icon category-icon-green">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+            </svg>
+          </div>
+          <div>
+            <h2 class="category-title">Procesos Organizacionales</h2>
+            <p class="category-subtitle">Documentacion y gestion de procesos</p>
+          </div>
+        </div>
+        
+        <div class="matrices-grid">
+          <article class="matrix-card">
+            <div class="matrix-header">
+              <span class="matrix-badge matrix-badge-green">Procesos</span>
+              <span class="matrix-code">PR-001</span>
+            </div>
+            <h3 class="matrix-title">Diagrama de Entradas y Salidas</h3>
+            <p class="matrix-description">
+              Representacion visual del flujo de recursos, materiales e informacion 
+              que entran y salen de los procesos productivos de Samsung.
+            </p>
+            <div class="matrix-aspects">
+              <h4 class="aspects-title">Componentes:</h4>
+              <ul class="aspects-list">
+                <li>Entradas: materias primas y recursos</li>
+                <li>Procesos de transformacion</li>
+                <li>Salidas: productos y subproductos</li>
+                <li>Retroalimentacion del sistema</li>
+              </ul>
+            </div>
+            <button class="matrix-btn" onclick="openModal('https://i.imgur.com/GV9KHqe.jpeg', 'Diagrama de Entradas y Salidas')">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                <circle cx="12" cy="12" r="3"></circle>
+              </svg>
+              Ver Diagrama
+            </button>
+          </article>
+
+          <article class="matrix-card">
+            <div class="matrix-header">
+              <span class="matrix-badge matrix-badge-green">Procesos</span>
+              <span class="matrix-code">PR-002</span>
+            </div>
+            <h3 class="matrix-title">Mapa de Procesos</h3>
+            <p class="matrix-description">
+              Vision general de todos los procesos de la organizacion, mostrando 
+              su interrelacion y clasificacion por tipo de proceso.
+            </p>
+            <div class="matrix-aspects">
+              <h4 class="aspects-title">Tipos de Procesos:</h4>
+              <ul class="aspects-list">
+                <li>Procesos estrategicos</li>
+                <li>Procesos operativos o clave</li>
+                <li>Procesos de soporte</li>
+                <li>Interacciones entre procesos</li>
+              </ul>
+            </div>
+            <button class="matrix-btn" onclick="openModal('https://i.imgur.com/VMGFL4s.jpeg', 'Mapa de Procesos')">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                <circle cx="12" cy="12" r="3"></circle>
+              </svg>
+              Ver Mapa
+            </button>
+          </article>
+
+          <article class="matrix-card">
+            <div class="matrix-header">
+              <span class="matrix-badge matrix-badge-green">Procesos</span>
+              <span class="matrix-code">PR-003</span>
+            </div>
+            <h3 class="matrix-title">Matriz de Procesos</h3>
+            <p class="matrix-description">
+              Documento detallado que describe cada proceso, sus responsables, 
+              indicadores de desempeno y criterios de evaluacion.
+            </p>
+            <div class="matrix-aspects">
+              <h4 class="aspects-title">Informacion Incluida:</h4>
+              <ul class="aspects-list">
+                <li>Nombre y objetivo del proceso</li>
+                <li>Responsables y participantes</li>
+                <li>Indicadores de desempeno (KPIs)</li>
+                <li>Documentacion asociada</li>
+              </ul>
+            </div>
+            <button class="matrix-btn" onclick="openModal('https://i.imgur.com/exB00lm.jpeg', 'Matriz de Procesos')">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                <circle cx="12" cy="12" r="3"></circle>
+              </svg>
+              Ver Matriz
+            </button>
+          </article>
+
+          <article class="matrix-card">
+            <div class="matrix-header">
+              <span class="matrix-badge matrix-badge-green">Procesos</span>
+              <span class="matrix-code">PR-004</span>
+            </div>
+            <h3 class="matrix-title">Matriz de Roles</h3>
+            <p class="matrix-description">
+              Definicion clara de las responsabilidades y funciones de cada rol 
+              dentro de los procesos organizacionales.
+            </p>
+            <div class="matrix-aspects">
+              <h4 class="aspects-title">Elementos Definidos:</h4>
+              <ul class="aspects-list">
+                <li>Roles y cargos involucrados</li>
+                <li>Responsabilidades especificas</li>
+                <li>Autoridad y nivel de decision</li>
+                <li>Relaciones entre roles</li>
+              </ul>
+            </div>
+            <button class="matrix-btn" onclick="openModal('https://i.imgur.com/etzZxFu.jpeg', 'Matriz de Roles')">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                <circle cx="12" cy="12" r="3"></circle>
+              </svg>
+              Ver Matriz
+            </button>
+          </article>
+        </div>
+      </section>
+
+      <!-- Categoria: Riesgos y Ambiente -->
+      <section class="category-section">
+        <div class="category-header">
+          <div class="category-icon category-icon-orange">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path>
+              <line x1="12" y1="9" x2="12" y2="13"></line>
+              <line x1="12" y1="17" x2="12.01" y2="17"></line>
+            </svg>
+          </div>
+          <div>
+            <h2 class="category-title">Riesgos y Medio Ambiente</h2>
+            <p class="category-subtitle">Gestion de riesgos e impacto ambiental</p>
+          </div>
+        </div>
+        
+        <div class="matrices-grid">
+          <article class="matrix-card">
+            <div class="matrix-header">
+              <span class="matrix-badge matrix-badge-orange">Riesgos</span>
+              <span class="matrix-code">RM-001</span>
+            </div>
+            <h3 class="matrix-title">Matriz de Aspectos Ambientales</h3>
+            <p class="matrix-description">
+              Identificacion y evaluacion de los aspectos ambientales significativos 
+              derivados de las operaciones de Samsung.
+            </p>
+            <div class="matrix-aspects">
+              <h4 class="aspects-title">Aspectos Evaluados:</h4>
+              <ul class="aspects-list">
+                <li>Consumo de recursos naturales</li>
+                <li>Generacion de residuos y emisiones</li>
+                <li>Impacto en ecosistemas</li>
+                <li>Medidas de mitigacion y control</li>
+              </ul>
+            </div>
+            <button class="matrix-btn" onclick="openModal('https://i.imgur.com/XvEs3AN.jpeg', 'Matriz de Aspectos Ambientales')">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                <circle cx="12" cy="12" r="3"></circle>
+              </svg>
+              Ver Matriz
+            </button>
+          </article>
+
+          <article class="matrix-card">
+            <div class="matrix-header">
+              <span class="matrix-badge matrix-badge-orange">Riesgos</span>
+              <span class="matrix-code">RM-002</span>
+            </div>
+            <h3 class="matrix-title">Mapa de Calor de Riesgos</h3>
+            <p class="matrix-description">
+              Representacion visual que clasifica los riesgos segun su probabilidad 
+              de ocurrencia e impacto potencial en la organizacion.
+            </p>
+            <div class="matrix-aspects">
+              <h4 class="aspects-title">Dimensiones de Analisis:</h4>
+              <ul class="aspects-list">
+                <li>Probabilidad de ocurrencia</li>
+                <li>Severidad del impacto</li>
+                <li>Clasificacion por colores (bajo, medio, alto)</li>
+                <li>Priorizacion de acciones</li>
+              </ul>
+            </div>
+            <button class="matrix-btn" onclick="openModal('https://i.imgur.com/ok7HidC.jpeg', 'Mapa de Calor de Riesgos')">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                <circle cx="12" cy="12" r="3"></circle>
+              </svg>
+              Ver Mapa
+            </button>
+          </article>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <span class="footer-logo">SAMSUNG</span>
+          <p class="footer-text">Documentacion de Gestion Organizacional</p>
+        </div>
+        <div class="footer-links">
+          <a href="index.html">Inicio</a>
+          <a href="matrices.html">Mapas y Matrices</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>2024 Samsung Electronics. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal para ver matriz -->
+  <div class="modal-overlay" id="matrixModal" onclick="closeModal(event)">
+    <div class="modal-container">
+      <div class="modal-header">
+        <h3 class="modal-title" id="modalTitle">Matriz</h3>
+        <button class="modal-close" onclick="closeModal(event)">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img src="" alt="Matriz" id="modalImage" class="modal-image">
+      </div>
+      <div class="modal-footer">
+        <button class="modal-btn-secondary" onclick="closeModal(event)">Cerrar</button>
+        <a href="" download class="modal-btn-primary" id="modalDownload">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+          </svg>
+          Descargar
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function toggleMenu() {
+      const mobileNav = document.getElementById('mobileNav');
+      mobileNav.classList.toggle('active');
+    }
+
+    function openModal(imageUrl, title) {
+      const modal = document.getElementById('matrixModal');
+      const modalImage = document.getElementById('modalImage');
+      const modalTitle = document.getElementById('modalTitle');
+      const modalDownload = document.getElementById('modalDownload');
+      
+      modalImage.src = imageUrl;
+      modalTitle.textContent = title;
+      modalDownload.href = imageUrl;
+      
+      modal.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal(event) {
+      if (event.target === event.currentTarget || event.currentTarget.classList.contains('modal-close')) {
+        const modal = document.getElementById('matrixModal');
+        modal.classList.remove('active');
+        document.body.style.overflow = 'auto';
+      }
+    }
+
+    document.addEventListener('keydown', function(event) {
+      if (event.key === 'Escape') {
+        const modal = document.getElementById('matrixModal');
+        modal.classList.remove('active');
+        document.body.style.overflow = 'auto';
+      }
+    });
+  </script>
+
+</body>
+</html>
