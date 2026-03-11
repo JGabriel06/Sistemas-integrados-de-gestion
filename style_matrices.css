@@ -504,55 +504,71 @@ button {
    Footer
    ======================================== */
 .footer {
-  background: var(--foreground);
+  padding: 4rem 0;
+  background-color: var(--foreground);
   color: var(--background);
-  padding: 3rem 0;
 }
 
-.footer-content {
-  display: flex;
-  flex-direction: column;
+.footer-grid {
+  display: grid;
   gap: 2rem;
-  padding-bottom: 2rem;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  margin-bottom: 3rem;
 }
 
 .footer-logo {
-  font-size: 1rem;
+  font-size: 1.125rem;
   font-weight: 700;
   letter-spacing: 0.1em;
+  margin-bottom: 1rem;
 }
 
-.footer-text {
+.footer-description {
   font-size: 0.875rem;
+  line-height: 1.6;
   color: var(--muted-foreground);
-  margin-top: 0.5rem;
 }
 
-.footer-links {
+.footer-title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.footer-list {
   display: flex;
-  flex-wrap: wrap;
-  gap: 1.5rem;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
-.footer-links a {
+.footer-list a,
+.footer-list span {
   font-size: 0.875rem;
   color: var(--muted-foreground);
   transition: color 0.2s;
 }
 
-.footer-links a:hover {
-  color: var(--background);
+.footer-list a:hover {
+  color: var(--primary);
 }
 
 .footer-bottom {
   padding-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
   text-align: center;
 }
 
 .footer-bottom p {
-  font-size: 0.8125rem;
+  font-size: 0.875rem;
   color: var(--muted-foreground);
+}
+
+.footer-disclaimer {
+  font-size: 0.75rem;
+  opacity: 0.6;
 }
 
 @media (min-width: 768px) {
